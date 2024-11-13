@@ -11,9 +11,9 @@ class CalculatriceController extends Controller
         return view('home');
     }
 
-    public function calculate(Request $request)
+    public function calcul(Request $request)
     {
-        return view('calcul');
+        return view('calculatrice');
     }
 
 }
