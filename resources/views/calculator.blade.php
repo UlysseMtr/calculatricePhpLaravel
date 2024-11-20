@@ -28,11 +28,11 @@
     }
 
     .calculatrice-carte {
-        border: 1px solid #b3a0d4; /* Couleur plus foncée pour les bordures */
+        border: 1px solid #b3a0d4; /* Bordure violette douce */
         padding: 20px;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
-        background-color: #ffffff; /* Fond blanc pour les cartes */
+        background-color: #ffffff;
         width: 60%;
     }
 
@@ -42,85 +42,99 @@
         font-size: 33px;
         font-family: "Roboto", serif;
         text-transform: uppercase;
-        color: #4a3c79; /* Couleur foncée et subtile pour le titre */
+        color: #4a3c79;
     }
 
     form {
-        display: flex; /* Active l'affichage en ligne */
-        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si besoin */
-        justify-content: center; /* Centrer horizontalement */
-        gap: 10px; /* Espacement entre les boutons */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
         margin-top: 20px;
     }
 
     input {
-        background-color: #ffffff; /* Fond blanc pour les champs */
-        border: 1px solid #b3a0d4; /* Bordure assortie à celle de la carte */
-        border-radius: 5px; /* Coins arrondis */
+        background-color: #ffffff;
+        border: 1px solid #b3a0d4;
+        border-radius: 5px;
         margin: 5px;
         padding: 10px;
         font-size: 16px;
         width: 100%;
         max-width: 300px;
-        color: #4a3c79; /* Texte foncé pour une meilleure lisibilité */
+        color: #4a3c79;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         transition: all 0.3s;
     }
 
     input:focus {
         outline: none;
-        border-color: #7c5fc7; /* Bordure violette au focus */
+        border-color: #7c5fc7;
         box-shadow: 0 0 8px rgba(124, 95, 199, 0.3);
     }
 
     button {
-        background-color: #7c5fc7; /* Violette douce pour les boutons */
+        background-color: #7c5fc7;
         color: #ffffff;
         border: none;
-        border-radius: 5px; /* Coins arrondis */
-        padding: 8px 12px; /* Padding réduit pour des boutons plus petits */
-        font-size: 14px; /* Taille de texte plus petite */
+        border-radius: 5px;
+        padding: 8px 12px;
+        font-size: 14px;
         cursor: pointer;
         transition: all 0.3s;
-        width: auto; /* Largeur automatique pour éviter que le bouton ne soit trop large */
-        max-width: 120px; /* Largeur maximale des boutons */
+        width: auto;
+        max-width: 120px;
     }
 
     button:hover {
-        background-color: #6a47c1; /* Violette un peu plus foncée au survol */
+        background-color: #6a47c1;
         box-shadow: 0 4px 8px rgba(106, 71, 193, 0.3);
     }
 
     button:active {
-        background-color: #5b3fa0; /* Violette encore plus foncée */
+        background-color: #5b3fa0;
     }
 
     .button1 {
-        background-color: #10b981; /* Vert doux */
+        background-color: #10b981;
     }
 
     .button1:hover {
-        background-color: #059669; /* Vert plus foncé au survol */
+        background-color: #059669;
     }
 
     .result-carte {
-        margin-top: 10px;
+        margin-top: 20px;
         border: 1px solid #ddd;
-        padding: 10px;
-        border-radius: 8px;
+        padding: 20px;
+        border-radius: 12px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px, rgba(0, 0, 0, 0.06) 0px 1px 3px;
-        background-color: #fef2f2; /* Rouge clair */
-        color: #b91c1c; /* Rouge foncé pour le texte */
-        justify-content: center;
+        background-color: #ffffff;
         width: 100%;
-        max-width: 300px;
+        max-width: 400px;
+        text-align: center;
+        transition: all 0.3s;
     }
 
     .result-carte p {
-        margin: 5px;
+        margin: 10px 0;
+        font-size: 20px;
         font-weight: bold;
-        text-align: center;
+        color: #4a3c79;
     }
+
+    .result-carte.erreur {
+        background-color: #f8d7da; /* Rouge clair pour les erreurs */
+        border-color: #f5c6cb;
+        color: #721c24; /* Rouge foncé pour le texte d'erreur */
+    }
+
+    .result-carte.succes {
+        background-color: #d4edda; /* Vert clair pour les résultats positifs */
+        border-color: #c3e6cb;
+        color: #155724; /* Vert foncé pour le texte */
+    }
+
 
 
 
