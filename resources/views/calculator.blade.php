@@ -156,6 +156,8 @@
                 <button type="button" onclick="setOperator('-')">-</button>
                 <button type="button" onclick="setOperator('*')">*</button>
                 <button type="button" onclick="setOperator('/')">/</button>
+                <button type="button" onclick="setOperator('^2')">^2</button>
+                <button type="button" onclick="setOperator('sin')">sin</button>
             </div>
             <input type="hidden" name="operator" id="operator" value="">
             <button type="button" class="button1" onclick="submitForm()">Calculer</button>
@@ -178,7 +180,6 @@
     function submitForm(){
         document.querySelector('form').submit();
     }
-
 </script>
 
 </body>

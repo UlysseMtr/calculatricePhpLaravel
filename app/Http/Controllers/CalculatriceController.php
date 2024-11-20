@@ -36,6 +36,12 @@ class CalculatriceController extends Controller
                 case '/':
                     $result = $num1 / $num2;
                     break;
+                case '^2':
+                    $result = pow($num1, 2);
+                    break;
+                case 'sin':
+                    $result = sin(deg2rad($num1));
+                    break;
                 default:
                     $result = 'Opérateur non valide';
             }
