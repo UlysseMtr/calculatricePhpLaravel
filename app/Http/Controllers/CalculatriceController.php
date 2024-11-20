@@ -6,35 +6,34 @@ use Illuminate\Http\Request;
 
 class CalculatriceController extends Controller
 {
+
     public function index()
     {
-        return view('calculatrice');
+        return view('calculator');
     }
 
-    public function calcul(Request $request)
+    public function calculate(Request $request)
     {
-        $num1 = $request->input('num1');
-        $num2 = $request->input('num2');
-        $operateur = $request->input('operande');
+        $num1 =$request->input('num1');
+        $num2 =$request->input('num2');
+        $operator =$request->input('operator');
 
-        switch ($operateur) {
+        switch ($operator) {
             case '+':
-                $resultat = $num1 + $num2;
+                $result = $num1 + $num2;
                 break;
             case '-':
-                $resultat = $num1 - $num2;
+                $result = $num1 - $num2;
                 break;
             case '*':
-                $resultat = $num1 * $num2;
+                $result = $num1 * $num2;
                 break;
             case '/':
-                $resultat = $num1 / $num2;
+                $result = $num1 / $num2;
                 break;
             default:
-                $resultat = 'Opérateur non valide';
+                $result = 'Opérateur non valide';
         }
-
-        return view('calculatrice', ['resultat' => $resultat, 'num1' => $num1, 'num2' => $num2, 'operateur' => $operateur]);
+        return view('calculator', ['result' => $result, 'num1' => $num1, 'num2' => $num2, 'operator' => $operator]);
     }
-
 }
