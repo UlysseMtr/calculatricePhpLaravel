@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/calculatrice', [\App\Http\Controllers\CalculatriceController::class, 'index']);
-Route::get('/calculatrice', [\App\Http\Controllers\CalculatriceController::class, 'calcul'])->name('calcul');
+Route::post('/calcul', [\App\Http\Controllers\CalculatriceController::class, 'calcul'])->name('calcul');
